@@ -2,16 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
-  "env": {
-    "VITE_SOME_KEY": "@some_key"
-  },
   "cleanUrls": true,
-  "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/old-path",
-      "destination": "/new-path",
-      "permanent": true
-    }
-  ]
+  "trailingSlash": false
 }
