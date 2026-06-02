@@ -69,18 +69,16 @@ export default function Footer() {
               </p>
               <div>
                 <div className="text-xs text-[#f5efe4]/55 mb-2">Phone</div>
-                <a href="tel:02265131498" className="block text-[#f5efe4] hover:text-[#e6c98a] transition-colors">
-                  022-65131498
+                <a href="tel:+912262511844" className="block text-[#f5efe4] hover:text-[#e6c98a] transition-colors">
+                  +912262511844
                 </a>
               </div>
               <div>
                 <div className="text-xs text-[#f5efe4]/55 mb-2">Mobile</div>
-                <a href="tel:9930709979" className="block text-[#f5efe4] hover:text-[#e6c98a] transition-colors">
-                  +91 9930709979
+                <a href="tel:+917208559666" className="block text-[#f5efe4] hover:text-[#e6c98a] transition-colors">
+                  +91 7208559666
                 </a>
-                <a href="tel:9029999979" className="block text-[#f5efe4] hover:text-[#e6c98a] transition-colors">
-                  +91 9029999979
-                </a>
+                
               </div>
               <a href={`mailto:${STORE.email}`} className="block text-[#f5efe4]/70 hover:text-[#e6c98a] transition-colors">
                 {STORE.email}

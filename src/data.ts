@@ -159,9 +159,9 @@ export const STORE = {
   name: "Aarav Beer & Wine Shop",
   address1: "Shop No 2, Plot No 7, Sector 19C",
   address2: "Vashi, Navi Mumbai – 400706",
-  phone: "+91 98765 43210",
-  phoneRaw: "919876543210",
-  whatsapp: "919876543210",
+  phone: "+91 72085 59666",
+  phoneRaw: "917208559666",
+  whatsapp: "917208559666",
   email: "hello@aaravbeerwine.in",
   hours: [
     { day: "Monday – Saturday", time: "10:00 AM – 11:00 PM" },
