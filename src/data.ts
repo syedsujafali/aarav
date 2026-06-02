@@ -112,14 +112,14 @@ export const WHY_US = [
 ];
 
 export const GALLERY = [
-  { src: "https://images.pexels.com/photos/9658801/pexels-photo-9658801.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=720", alt: "Wine display at the shop", span: "row-span-2" },
-  { src: "https://images.pexels.com/photos/33315802/pexels-photo-33315802.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Refrigerated beer shelf", span: "" },
-  { src: "https://images.pexels.com/photos/17546506/pexels-photo-17546506.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Well-stocked aisle", span: "" },
-  { src: "https://images.pexels.com/photos/18586560/pexels-photo-18586560.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=720", alt: "Whisky shelf display", span: "row-span-2" },
-  { src: "https://images.pexels.com/photos/30447488/pexels-photo-30447488.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Wine bottles on wooden shelves", span: "" },
-  { src: "https://images.pexels.com/photos/14393728/pexels-photo-14393728.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Spirits arranged in store", span: "" },
-  { src: "https://images.pexels.com/photos/15945596/pexels-photo-15945596.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Liquor bottles in warm lighting", span: "" },
-  { src: "https://images.pexels.com/photos/13310076/pexels-photo-13310076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Wine bottles on wooden shelves", span: "" },
+  { src: "https://images.pexels.com/photos/16531693/pexels-photo-16531693.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=720", alt: "Shelves of beer and liquor bottles in a retail store", span: "row-span-2" },
+  { src: "https://images.pexels.com/photos/12252377/pexels-photo-12252377.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Wine bottle shelves in a retail display", span: "" },
+  { src: "https://images.pexels.com/photos/15786533/pexels-photo-15786533.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Wine cellar racks stocked with bottles", span: "" },
+  { src: "https://images.pexels.com/photos/2664149/pexels-photo-2664149.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=720", alt: "Wine bottles arranged on a wooden rack", span: "row-span-2" },
+  { src: "https://images.pexels.com/photos/13253592/pexels-photo-13253592.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Liquor bottles and products on wooden store shelves", span: "" },
+  { src: "https://images.pexels.com/photos/9658801/pexels-photo-9658801.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Wine bottles displayed on store shelves", span: "" },
+  { src: "https://images.pexels.com/photos/11325915/pexels-photo-11325915.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Alcohol bottles lined up on shop shelves", span: "" },
+  { src: "https://images.pexels.com/photos/35831956/pexels-photo-35831956.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Illuminated liquor shelf with assorted bottles", span: "" },
 ];
 
 export const REVIEWS = [
