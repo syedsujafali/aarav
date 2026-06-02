@@ -24,7 +24,7 @@ export default function Hero() {
           <div className="lg:col-span-8 reveal">
             <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-[#c9a35a]/30 bg-white/[0.03] backdrop-blur-sm mb-7">
               <span className="w-1.5 h-1.5 rounded-full bg-[#c9a35a] animate-pulse" />
-              <span className="text-[11px] tracking-[0.32em] uppercase text-[#e6c98a]">Est. Vashi, Navi Mumbai</span>
+              <span className="text-[11px] tracking-[0.32em]  text-[#e6c98a]">est. VASHI, NAVI MUMBAI</span>
             </div>
 
             <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.02] tracking-tight text-[#f5efe4]">
