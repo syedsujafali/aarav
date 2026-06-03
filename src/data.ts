@@ -1,3 +1,20 @@
+import beerImg from "./assets/beer.png";
+import wineImg from "./assets/wine.png";
+import whiskyImg from "./assets/whisky.png";
+import rumImg from "./assets/rum.png";
+import vodkaImg from "./assets/vodka.png";
+import ginImg from "./assets/gin.png";
+
+import gallery1 from "./assets/gallery1.png";
+import gallery2 from "./assets/gallery2.png";
+import gallery3 from "./assets/gallery3.png";
+import gallery4 from "./assets/gallery4.png";
+import gallery5 from "./assets/gallery5.png";
+import gallery6 from "./assets/gallery6.png";
+import gallery7 from "./assets/gallery7.png";
+import gallery9 from "./assets/gallery9.png";
+
+
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "Categories", href: "#categories" },
@@ -13,49 +30,49 @@ export const CATEGORIES = [
     name: "Beer",
     tagline: "Chilled. Crisp. Refreshing.",
     desc: "Lagers, wheat ales and craft brews stocked cold in our refrigerators.",
-    img: "https://images.pexels.com/photos/11469000/pexels-photo-11469000.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=900",
+    img: beerImg,
     icon: "🍺",
   },
   {
     name: "Wine",
     tagline: "Reds, Whites & Rosé",
     desc: "Curated selection of Indian and popular international wines for every palate.",
-    img: "https://images.pexels.com/photos/35554387/pexels-photo-35554387.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=900",
+    img: wineImg,
     icon: "🍷",
   },
   {
     name: "Whisky",
     tagline: "Smooth. Aged. Bold.",
     desc: "From everyday pours to premium blends — Royal Stag, Blenders Pride & more.",
-    img: "https://images.pexels.com/photos/18324708/pexels-photo-18324708.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=900",
+    img: whiskyImg,
     icon: "🥃",
   },
   {
     name: "Rum",
     tagline: "Warm. Rich. Classic.",
     desc: "Dark, white and spiced rums — perfect for any season or celebration.",
-    img: "https://images.pexels.com/photos/20876381/pexels-photo-20876381.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=900",
+    img: rumImg,
     icon: "🍹",
   },
   {
     name: "Vodka",
     tagline: "Clean. Crisp. Versatile.",
     desc: "Smirnoff, Magic Moments and more — ready for mixers and cocktails.",
-    img: "https://images.pexels.com/photos/30271788/pexels-photo-30271788.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=900",
+    img: vodkaImg,
     icon: "🍸",
   },
   {
     name: "Gin",
     tagline: "Botanical. Aromatic.",
     desc: "Classic London Dry and Indian craft gins for your perfect G&T.",
-    img: "https://images.pexels.com/photos/29574852/pexels-photo-29574852.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=900",
+    img: ginImg,
     icon: "🌿",
   },
   {
     name: "Brandy",
     tagline: "Smooth. Warming.",
     desc: "Premium brandies for the connoisseur and the casual sipper alike.",
-    img: "https://images.pexels.com/photos/7254847/pexels-photo-7254847.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=900",
+    img: "https://images.pexels.com/photos/5947019/pexels-photo-5947019.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=900",
     icon: "🥂",
   },
 ];
@@ -112,14 +129,15 @@ export const WHY_US = [
 ];
 
 export const GALLERY = [
-  { src: "https://images.pexels.com/photos/16531693/pexels-photo-16531693.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=720", alt: "Shelves of beer and liquor bottles in a retail store", span: "row-span-2" },
-  { src: "https://images.pexels.com/photos/12252377/pexels-photo-12252377.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Wine bottle shelves in a retail display", span: "" },
-  { src: "https://images.pexels.com/photos/15786533/pexels-photo-15786533.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Wine cellar racks stocked with bottles", span: "" },
-  { src: "https://images.pexels.com/photos/2664149/pexels-photo-2664149.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=720", alt: "Wine bottles arranged on a wooden rack", span: "row-span-2" },
-  { src: "https://images.pexels.com/photos/13253592/pexels-photo-13253592.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Liquor bottles and products on wooden store shelves", span: "" },
-  { src: "https://images.pexels.com/photos/9658801/pexels-photo-9658801.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Wine bottles displayed on store shelves", span: "" },
-  { src: "https://images.pexels.com/photos/11325915/pexels-photo-11325915.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Alcohol bottles lined up on shop shelves", span: "" },
-  { src: "https://images.pexels.com/photos/35831956/pexels-photo-35831956.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=900", alt: "Illuminated liquor shelf with assorted bottles", span: "" },
+  { src: gallery1, alt: "Modern warm-lit shelves with whiskey and wine bottles", span: "row-span-2" },
+  { src: gallery2, alt: "Cold drinks refrigerator stocked with chilled craft beers", span: "" },
+  { src: gallery3, alt: "Elegant wine rack with premium bottles in boutique display", span: "" },
+  { src: gallery4, alt: "Close-up of premium gin and spirits on cozy lighted shelf", span: "row-span-2" },
+  { src: gallery5, alt: "Vibrant craft beer cans and bottles neatly organized on shelf", span: "" },
+  { src: gallery6, alt: "Wine bottles standing upright with soft under-shelf light", span: "" },
+  { src: gallery7, alt: "Abstract craft beer can refrigerator display", span: "" },
+  { src: gallery9, alt: "Boutique wine glass with deep abstract glow", span: "" },
+
 ];
 
 export const REVIEWS = [

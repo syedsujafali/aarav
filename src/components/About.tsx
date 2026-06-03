@@ -1,3 +1,8 @@
+import about1 from '../assets/about1.png';
+import about2 from '../assets/about2.png';
+import about3 from '../assets/about3.png';
+import about4 from '../assets/about4.png';
+
 export default function About() {
   const highlights = [
     "Trusted neighbourhood store since years",
@@ -16,7 +21,7 @@ export default function About() {
             <div className="relative grid grid-cols-5 grid-rows-6 gap-4 h-[560px]">
               <div className="col-span-3 row-span-4 relative rounded-2xl overflow-hidden border border-[#c9a35a]/20 shadow-2xl shadow-black/50">
                 <img
-                  src="https://images.pexels.com/photos/7101917/pexels-photo-7101917.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=700"
+                  src={about1}
                   alt="Rows of wine bottles on store shelves"
                   loading="lazy"
                   className="w-full h-full object-cover"
@@ -24,7 +29,7 @@ export default function About() {
               </div>
               <div className="col-span-2 row-span-3 col-start-4 relative rounded-2xl overflow-hidden border border-[#c9a35a]/20 shadow-2xl shadow-black/50">
                 <img
-                  src="https://images.pexels.com/photos/18062098/pexels-photo-18062098.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=500"
+                  src={about2}
                   alt="Wine shelves in a shop interior"
                   loading="lazy"
                   className="w-full h-full object-cover"
@@ -32,7 +37,7 @@ export default function About() {
               </div>
               <div className="col-span-2 row-span-3 col-start-4 row-start-4 relative rounded-2xl overflow-hidden border border-[#c9a35a]/20 shadow-2xl shadow-black/50">
                 <img
-                  src="https://images.pexels.com/photos/16096977/pexels-photo-16096977.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=500"
+                  src={about3}
                   alt="Whisky bottles on display in a shop"
                   loading="lazy"
                   className="w-full h-full object-cover"
@@ -40,7 +45,7 @@ export default function About() {
               </div>
               <div className="col-span-3 row-span-2 row-start-5 relative rounded-2xl overflow-hidden border border-[#c9a35a]/20 shadow-2xl shadow-black/50">
                 <img
-                  src="https://images.pexels.com/photos/4622280/pexels-photo-4622280.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=700"
+                  src={about4}
                   alt="Assorted wine bottles arranged on store shelves"
                   loading="lazy"
                   className="w-full h-full object-cover"

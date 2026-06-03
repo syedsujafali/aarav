@@ -13,19 +13,38 @@ export default function Categories() {
         />
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {CATEGORIES.map((c, i) => (
-            <article
-              key={c.name}
-              className="reveal group relative rounded-2xl overflow-hidden bg-[#111114] border border-white/5 hover:border-[#c9a35a]/40 transition-all duration-500"
-              style={{ transitionDelay: `${i * 40}ms` }}
-            >
-              <div className="relative h-72 overflow-hidden">
-                <img
-                  src={c.img}
-                  alt={c.name}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-110"
-                />
+          {CATEGORIES.map((c, i) => {
+            const images = c.images ?? [c.img];
+
+            return (
+              <article
+                key={c.name}
+                className="reveal group relative rounded-2xl overflow-hidden bg-[#111114] border border-white/5 hover:border-[#c9a35a]/40 transition-all duration-500"
+                style={{ transitionDelay: `${i * 40}ms` }}
+              >
+                <div className="relative h-72 overflow-hidden bg-[#080808]">
+                  <div
+                    className={`grid h-full gap-1.5 p-1.5 transition-transform duration-[1.4s] ease-out group-hover:scale-[1.03] ${
+                      images.length === 1 ? "grid-cols-1" : "grid-cols-2"
+                    }`}
+                  >
+                    {images.map((src, imageIndex) => (
+                      <div
+                        key={src}
+                        className={`relative overflow-hidden bg-[#12100e] ${
+                          images.length === 2 && imageIndex === 0 ? "row-span-2" : ""
+                        }`}
+                      >
+                        <img
+                          src={src}
+                          alt={`${c.name} product ${imageIndex + 1}`}
+                          loading="lazy"
+                          className="h-full w-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,transparent,rgba(0,0,0,0.28)_72%)]" />
+                      </div>
+                    ))}
+                  </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-[#0a0a0b]/40 to-transparent" />
                 <div className="absolute top-4 left-4 w-11 h-11 rounded-full grid place-items-center bg-[#0a0a0b]/70 backdrop-blur-md border border-[#c9a35a]/30 text-xl">
                   {c.icon}
@@ -51,8 +70,9 @@ export default function Categories() {
 
               {/* Hover gold glow */}
               <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[radial-gradient(circle_at_50%_0%,rgba(201,163,90,0.18),transparent_60%)]" />
-            </article>
-          ))}
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

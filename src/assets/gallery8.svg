@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgG8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050508" />
+      <stop offset="100%" stop-color="#1a1a24" />
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+    </linearGradient>
+    <filter id="blurFilter">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+  </defs>
+
+  <rect width="720" height="900" fill="url(#bgG8)" />
+
+  <!-- Neon Accent -->
+  <line x1="360" y1="0" x2="360" y2="900" stroke="#c9a35a" stroke-width="4" stroke-opacity="0.4" filter="url(#blurFilter)" />
+  <line x1="360" y1="0" x2="360" y2="900" stroke="#f5efe4" stroke-width="1" stroke-opacity="0.8" />
+
+  <g transform="translate(100, 200)">
+    <!-- Glass shelf container -->
+    <rect x="0" y="0" width="520" height="150" rx="20" fill="url(#glass)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2" />
+    
+    <!-- Abstract bottles -->
+    <rect x="50" y="40" width="40" height="110" rx="5" fill="#34495e" />
+    <rect x="60" y="10" width="20" height="40" fill="#34495e" />
+    
+    <rect x="130" y="60" width="50" height="90" rx="5" fill="#8e44ad" opacity="0.8" />
+    <rect x="145" y="20" width="20" height="50" fill="#8e44ad" opacity="0.8" />
+    
+    <rect x="230" y="30" width="45" height="120" rx="5" fill="#e67e22" opacity="0.7" />
+    <rect x="245" y="0" width="15" height="40" fill="#e67e22" opacity="0.7" />
+
+    <rect x="330" y="50" width="60" height="100" rx="15" fill="#16a085" opacity="0.6" />
+    <rect x="350" y="10" width="20" height="50" fill="#16a085" opacity="0.6" />
+  </g>
+
+  <g transform="translate(100, 500)">
+    <!-- Glass shelf container 2 -->
+    <rect x="0" y="0" width="520" height="150" rx="20" fill="url(#glass)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2" />
+    
+    <!-- Abstract bottles -->
+    <circle cx="90" cy="110" r="40" fill="#c0392b" opacity="0.7" />
+    <rect x="80" y="20" width="20" height="60" fill="#c0392b" opacity="0.7" />
+
+    <circle cx="250" cy="110" r="40" fill="#2980b9" opacity="0.7" />
+    <rect x="240" y="20" width="20" height="60" fill="#2980b9" opacity="0.7" />
+
+    <circle cx="410" cy="110" r="40" fill="#f39c12" opacity="0.7" />
+    <rect x="400" y="20" width="20" height="60" fill="#f39c12" opacity="0.7" />
+  </g>
+</svg>
