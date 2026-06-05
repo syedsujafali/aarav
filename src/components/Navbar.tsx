@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logo from "../assets/logoo.png";
 import { NAV_LINKS, STORE } from "../data";
 
 export default function Navbar() {
@@ -16,21 +17,17 @@ export default function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#0a0a0b]/85 backdrop-blur-xl border-b border-[#c9a35a]/15 py-3"
-          : "bg-transparent py-5"
+          ? "bg-[#0a0a0b]/85 backdrop-blur-xl border-b border-[#c9a35a]/15 py-2"
+          : "bg-transparent py-2"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-3 group">
-          <span className="relative w-11 h-11 rounded-full grid place-items-center bg-gradient-to-br from-[#c9a35a] via-[#8c6a2b] to-[#5a1a23] shadow-[0_0_24px_-6px_#c9a35a]">
-            <span className="absolute inset-[2px] rounded-full bg-[#0a0a0b] grid place-items-center">
-              <span className="font-serif text-[#e6c98a] text-xl leading-none">A</span>
-            </span>
-          </span>
-          <div className="leading-tight">
-            <div className="font-serif text-[#f5efe4] text-lg tracking-wide">Aarav</div>
-            <div className="text-[10px] tracking-[0.32em] text-[#c9a35a] uppercase">Beer & Wine</div>
-          </div>
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-start gap-30 lg: flex justify-between h-20">
+        <a href="#home" className="flex items-center group ">
+          <img
+            src={logo}
+            alt="Aarav Beer & Wine Shop logo"
+            className="h-20 w-64 sm:h-28 sm:w-50 object-contain rounded-none shadow-none p-0 bg-transparent"
+          />
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
@@ -63,7 +60,7 @@ export default function Navbar() {
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="lg:hidden w-11 h-11 grid place-items-center rounded-full border border-[#c9a35a]/30 text-[#e6c98a]"
+          className="lg:hidden w-11 h-11 grid place-items-center rounded-full text-[#e6c98a]"
         >
           <div className="relative w-5 h-3.5">
             <span className={`absolute left-0 top-0 h-px w-full bg-current transition-transform ${open ? "translate-y-[7px] rotate-45" : ""}`} />

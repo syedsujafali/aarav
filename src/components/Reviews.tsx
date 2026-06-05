@@ -17,7 +17,7 @@ export default function Reviews() {
     <section id="reviews" className="relative py-24 md:py-32 bg-gradient-to-b from-[#0a0a0b] via-[#111114] to-[#0a0a0b] overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(201,163,90,0.08),transparent_55%)]" />
 
-      <div className="relative max-w-5xl mx-auto px-5 sm:px-8">
+      <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Customer Reviews"
           title={<>What Our <span className="italic text-gold-gradient">Customers Say</span></>}

@@ -9,7 +9,7 @@ export default function Contact() {
     <section id="contact" className="relative py-24 md:py-32 bg-[#0a0a0b] overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(90,26,35,0.3),transparent_60%)]" />
 
-      <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
+      <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Get in Touch"
           title={<>Visit, Call or <span className="italic text-gold-gradient">WhatsApp Us</span></>}

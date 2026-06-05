@@ -1,11 +1,13 @@
+import heroImg from "../assets/hero6.png";
+
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/14393728/pexels-photo-14393728.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1400&w=2000"
-          alt="Interior of Aarav Beer & Wine Shop"
+          src={heroImg}
+          alt="Aarav Beer & Wine Shop hero image"
           className="w-full h-full object-cover slow-zoom"
           loading="eager"
         />
@@ -19,15 +21,11 @@ export default function Hero() {
       <div className="absolute top-1/4 -left-20 w-72 h-72 rounded-full bg-[#c9a35a]/10 blur-3xl float-soft" />
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 rounded-full bg-[#5a1a23]/30 blur-3xl float-soft" style={{ animationDelay: "2s" }} />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 w-full pt-32 pb-20">
+      <div className="relative z-10 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-20">
         <div className="grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-8 reveal">
-            <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-[#c9a35a]/30 bg-white/[0.03] backdrop-blur-sm mb-7">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c9a35a] animate-pulse" />
-              <span className="text-[11px] tracking-[0.32em]  text-[#e6c98a]">est. VASHI, NAVI MUMBAI</span>
-            </div>
 
-            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.02] tracking-tight text-[#f5efe4]">
+            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.02] tracking-tight text-[#f5efe4] pt-10">
               Your Trusted{" "}
               <span className="text-gold-gradient italic">Beer & Wine</span>{" "}
               Shop in <span className="relative inline-block">

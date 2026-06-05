@@ -4,15 +4,11 @@ import whiskyImg from "./assets/whisky.png";
 import rumImg from "./assets/rum.png";
 import vodkaImg from "./assets/vodka.png";
 import ginImg from "./assets/gin.png";
-
-import gallery1 from "./assets/gallery1.png";
-import gallery2 from "./assets/gallery2.png";
-import gallery3 from "./assets/gallery3.png";
-import gallery4 from "./assets/gallery4.png";
-import gallery5 from "./assets/gallery5.png";
-import gallery6 from "./assets/gallery6.png";
-import gallery7 from "./assets/gallery7.png";
-import gallery9 from "./assets/gallery9.png";
+import image1 from "./assets/1.jpeg";
+import image2 from "./assets/2.jpeg";
+import image3 from "./assets/3.jpeg";
+import image4 from "./assets/4.jpeg";
+import image5 from "./assets/5.jpeg";
 
 
 export const NAV_LINKS = [
@@ -72,7 +68,7 @@ export const CATEGORIES = [
     name: "Brandy",
     tagline: "Smooth. Warming.",
     desc: "Premium brandies for the connoisseur and the casual sipper alike.",
-    img: "https://images.pexels.com/photos/5947019/pexels-photo-5947019.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=900",
+    img: whiskyImg,
     icon: "🥂",
   },
 ];
@@ -129,15 +125,14 @@ export const WHY_US = [
 ];
 
 export const GALLERY = [
-  { src: gallery1, alt: "Modern warm-lit shelves with whiskey and wine bottles", span: "row-span-2" },
-  { src: gallery2, alt: "Cold drinks refrigerator stocked with chilled craft beers", span: "" },
-  { src: gallery3, alt: "Elegant wine rack with premium bottles in boutique display", span: "" },
-  { src: gallery4, alt: "Close-up of premium gin and spirits on cozy lighted shelf", span: "row-span-2" },
-  { src: gallery5, alt: "Vibrant craft beer cans and bottles neatly organized on shelf", span: "" },
-  { src: gallery6, alt: "Wine bottles standing upright with soft under-shelf light", span: "" },
-  { src: gallery7, alt: "Abstract craft beer can refrigerator display", span: "" },
-  { src: gallery9, alt: "Boutique wine glass with deep abstract glow", span: "" },
-
+  { src: image1, alt: "Warm, inviting display of premium bottles and spirits", span: "row-span-2" },
+  { src: image2, alt: "Carefully arranged shelves with curated drink selections", span: "" },
+  { src: image3, alt: "Elegant bottle presentation in a boutique shop setting", span: "" },
+  { src: image4, alt: "Close-up of premium spirits on a softly lit shelf", span: "row-span-2" },
+  { src: image5, alt: "Stylish drink display with rich color and texture", span: "" },
+  { src: image1, alt: "Featured bottle arrangement for a welcoming store vibe", span: "" },
+  { src: image2, alt: "Freshly stocked liquor shelves in the shop", span: "" },
+  { src: image3, alt: "A polished selection of beverages for any occasion", span: "" },
 ];
 
 export const REVIEWS = [

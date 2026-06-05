@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 export default function Gallery() {
   return (
     <section id="gallery" className="relative py-24 md:py-32 bg-[#0a0a0b]">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Store Gallery"
           title={<>A Peek <span className="italic text-gold-gradient">Inside the Shop</span></>}

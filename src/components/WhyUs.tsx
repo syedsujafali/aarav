@@ -7,7 +7,7 @@ export default function WhyUs() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(90,26,35,0.35),transparent_55%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(201,163,90,0.08),transparent_55%)]" />
 
-      <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
+      <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Why Choose Us"
           title={<>The Aarav <span className="italic text-gold-gradient">Difference</span></>}

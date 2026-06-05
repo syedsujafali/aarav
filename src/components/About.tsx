@@ -1,7 +1,7 @@
-import about1 from '../assets/about1.png';
-import about2 from '../assets/about2.png';
-import about3 from '../assets/about3.png';
-import about4 from '../assets/about4.png';
+import about1 from '../assets/1.jpeg';
+import about2 from '../assets/2.jpeg';
+import about3 from '../assets/3.jpeg';
+import about4 from '../assets/4.jpeg';
 
 export default function About() {
   const highlights = [
@@ -14,7 +14,7 @@ export default function About() {
 
   return (
     <section id="about" className="relative py-24 md:py-32 bg-[#0a0a0b] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
           {/* Image stack */}
           <div className="reveal relative">

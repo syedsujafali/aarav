@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-[#0a0a0b] border-t border-[#c9a35a]/15 pt-20 pb-8 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(201,163,90,0.06),transparent_55%)]" />
-      <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
+      <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-12 gap-12">
           {/* Brand */}
           <div className="md:col-span-5">
