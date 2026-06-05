@@ -2,24 +2,24 @@ import { NAV_LINKS, STORE } from "../data";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#0a0a0b] border-t border-[#c9a35a]/15 pt-20 pb-8 overflow-hidden">
+    <footer className="relative bg-[#120d0a] border-t border-[#c78f45]/15 pt-20 pb-8 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(201,163,90,0.06),transparent_55%)]" />
       <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-12 gap-12">
           {/* Brand */}
           <div className="md:col-span-5">
             <div className="flex items-center gap-3">
-              <span className="relative w-12 h-12 rounded-full grid place-items-center bg-gradient-to-br from-[#c9a35a] via-[#8c6a2b] to-[#5a1a23]">
-                <span className="absolute inset-[2px] rounded-full bg-[#0a0a0b] grid place-items-center">
-                  <span className="font-serif text-[#e6c98a] text-xl">A</span>
+              <span className="relative w-12 h-12 rounded-full grid place-items-center bg-gradient-to-br from-[#c78f45] via-[#8c6a2b] to-[#7a231f]">
+                <span className="absolute inset-[2px] rounded-full bg-[#120d0a] grid place-items-center">
+                  <span className="font-serif text-[#e2c78a] text-xl">A</span>
                 </span>
               </span>
               <div>
-                <div className="font-serif text-xl text-[#f5efe4]">Aarav Beer & Wine</div>
-                <div className="text-[10px] tracking-[0.3em] uppercase text-[#c9a35a]">Vashi · Navi Mumbai</div>
+                <div className="font-serif text-xl text-[#e8d3b6]">Aarav Beer & Wine</div>
+                <div className="text-[10px] tracking-[0.3em] uppercase text-[#c78f45]">Vashi · Navi Mumbai</div>
               </div>
             </div>
-            <p className="mt-5 text-[#f5efe4]/60 leading-relaxed max-w-md">
+            <p className="mt-5 text-[#e8d3b6]/60 leading-relaxed max-w-md">
               Your trusted neighbourhood beer, wine and premium spirits shop in Sector 19C, Vashi.
               Wide selection, genuine products, friendly service — since years.
             </p>
@@ -35,7 +35,7 @@ export default function Footer() {
                   key={s.label}
                   href="#"
                   aria-label={s.label}
-                  className="w-11 h-11 rounded-full grid place-items-center border border-[#c9a35a]/25 text-[#e6c98a] hover:bg-[#c9a35a] hover:text-[#0a0a0b] transition-colors"
+                  className="w-11 h-11 rounded-full grid place-items-center border border-[#c78f45]/25 text-[#e2c78a] hover:bg-[#c78f45] hover:text-[#120d0a] transition-colors"
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d={s.path} />
@@ -47,11 +47,11 @@ export default function Footer() {
 
           {/* Links */}
           <div className="md:col-span-3">
-            <div className="text-[10px] tracking-[0.3em] uppercase text-[#c9a35a] mb-5">Navigate</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-[#c78f45] mb-5">Navigate</div>
             <ul className="space-y-3">
               {NAV_LINKS.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className="text-[#f5efe4]/70 hover:text-[#e6c98a] transition-colors text-sm">
+                  <a href={l.href} className="text-[#e8d3b6]/70 hover:text-[#e2c78a] transition-colors text-sm">
                     {l.label}
                   </a>
                 </li>
@@ -61,26 +61,26 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="md:col-span-4">
-            <div className="text-[10px] tracking-[0.3em] uppercase text-[#c9a35a] mb-5">Contact</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-[#c78f45] mb-5">Contact</div>
             <div className="space-y-4 text-sm">
-              <p className="text-[#f5efe4]/70 leading-relaxed">
+              <p className="text-[#e8d3b6]/70 leading-relaxed">
                 {STORE.address1},<br />
                 {STORE.address2}
               </p>
               <div>
-                <div className="text-xs text-[#f5efe4]/55 mb-2">Phone</div>
-                <a href="tel:+912262511844" className="block text-[#f5efe4] hover:text-[#e6c98a] transition-colors">
+                <div className="text-xs text-[#e8d3b6]/55 mb-2">Phone</div>
+                <a href="tel:+912262511844" className="block text-[#e8d3b6] hover:text-[#e2c78a] transition-colors">
                   +912262511844
                 </a>
               </div>
               <div>
-                <div className="text-xs text-[#f5efe4]/55 mb-2">Mobile</div>
-                <a href="tel:+917208559666" className="block text-[#f5efe4] hover:text-[#e6c98a] transition-colors">
+                <div className="text-xs text-[#e8d3b6]/55 mb-2">Mobile</div>
+                <a href="tel:+917208559666" className="block text-[#e8d3b6] hover:text-[#e2c78a] transition-colors">
                   +91 7208559666
                 </a>
                 
               </div>
-              <a href={`mailto:${STORE.email}`} className="block text-[#f5efe4]/70 hover:text-[#e6c98a] transition-colors">
+              <a href={`mailto:${STORE.email}`} className="block text-[#e8d3b6]/70 hover:text-[#e2c78a] transition-colors">
                 {STORE.email}
               </a>
             </div>
@@ -91,11 +91,11 @@ export default function Footer() {
 
         {/* Bottom strip */}
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-[#f5efe4]/45 text-center md:text-left">
+          <p className="text-xs text-[#e8d3b6]/45 text-center md:text-left">
             © {new Date().getFullYear()} Aarav Beer & Wine Shop. All rights reserved.
             Crafted with care in Navi Mumbai.
           </p>
-          <p className="text-[10px] text-[#f5efe4]/40 tracking-wider uppercase text-center">
+          <p className="text-[10px] text-[#e8d3b6]/40 tracking-wider uppercase text-center">
             Drink Responsibly · 21+ Only · Licensed Retailer
           </p>
         </div>

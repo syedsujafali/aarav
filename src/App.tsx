@@ -16,7 +16,7 @@ export default function App() {
   useReveal();
 
   return (
-    <div className="min-h-screen bg-[#0a0a0b] text-[#f5efe4] selection:bg-[#c9a35a] selection:text-[#0a0a0b]">
+    <div className="min-h-screen bg-[#120d0a] text-[#e8d3b6] selection:bg-[#c78f45] selection:text-[#120d0a]">
       <Navbar />
       <main>
         <Hero />

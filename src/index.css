@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #0a0a0b;
-  --color-ink-2: #111114;
-  --color-ink-3: #18181d;
-  --color-bone: #f5efe4;
-  --color-gold: #c9a35a;
-  --color-gold-2: #e6c98a;
-  --color-maroon: #5a1a23;
-  --color-maroon-2: #7a2530;
+  --color-ink: #120d0a;
+  --color-ink-2: #1a140f;
+  --color-ink-3: #251d17;
+  --color-bone: #e8d3b6;
+  --color-gold: #c78f45;
+  --color-gold-2: #e2c78a;
+  --color-maroon: #7a231f;
+  --color-maroon-2: #a2473b;
   --color-navy: #0f1b34;
   --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -21,27 +21,27 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background: #0a0a0b;
-  color: #f5efe4;
+  background: #120d0a;
+  color: #fd9a0f;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: #0a0a0b; }
+::-webkit-scrollbar-track { background: #120d0a; }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #c9a35a, #7a2530);
+  background: linear-gradient(180deg, #e08c1e, #a2473b);
   border-radius: 10px;
 }
 
 /* Selection */
 ::selection {
-  background: #c9a35a;
-  color: #0a0a0b;
+  background: #ee9219;
+  color: #120d0a;
 }
 
 /* Gold text gradient */
 .text-gold-gradient {
-  background: linear-gradient(135deg, #e6c98a 0%, #c9a35a 40%, #8c6a2b 100%);
+  background: linear-gradient(135deg, #e79b16 0%, #fab003 40%, #aa700b 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -50,8 +50,8 @@ body {
 /* Animated gold border */
 .gold-border {
   position: relative;
-  background: linear-gradient(#111114, #111114) padding-box,
-              linear-gradient(135deg, #c9a35a, #5a1a23, #c9a35a) border-box;
+  background: linear-gradient(#1a140f, #1a140f) padding-box,
+              linear-gradient(135deg, #a3630f, #7a231f, #d09a49) border-box;
   border: 1px solid transparent;
 }
 
@@ -64,7 +64,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, transparent, rgba(230,201,138,0.18), transparent);
+  background: linear-gradient(90deg, transparent, rgba(236, 174, 39, 0.18), transparent);
   transform: translateX(-120%) skewX(-20deg);
   pointer-events: none;
 }

@@ -17,7 +17,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#0a0a0b]/85 backdrop-blur-xl border-b border-[#c9a35a]/15 py-2"
+          ? "bg-[#120d0a]/85 backdrop-blur-xl border-b border-[#c78f45]/15 py-2"
           : "bg-transparent py-2"
       }`}
     >
@@ -26,7 +26,7 @@ export default function Navbar() {
           <img
             src={logo}
             alt="Aarav Beer & Wine Shop logo"
-            className="h-20 w-64 sm:h-28 sm:w-50 object-contain rounded-none shadow-none p-0 bg-transparent"
+            className="h-25 w-64 sm:h-20 sm:w-50 object-contain rounded-none shadow-none p-0 bg-transparent opacity-90"
           />
         </a>
 
@@ -35,7 +35,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="relative text-sm text-[#f5efe4]/80 hover:text-[#e6c98a] transition-colors after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-[#c9a35a] after:transition-all hover:after:w-full"
+              className="relative text-sm text-[#e8d3b6]/80 hover:text-[#e2c78a] transition-colors after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-[#c78f45] after:transition-all hover:after:w-full"
             >
               {l.label}
             </a>
@@ -45,13 +45,13 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href={`tel:${STORE.phoneRaw}`}
-            className="text-sm text-[#f5efe4]/80 hover:text-[#e6c98a] transition-colors"
+            className="text-sm text-[#e8d3b6]/80 hover:text-[#e2c78a] transition-colors"
           >
             {STORE.phone}
           </a>
           <a
             href="#contact"
-            className="relative overflow-hidden shimmer px-5 py-2.5 rounded-full text-sm bg-gradient-to-r from-[#c9a35a] to-[#8c6a2b] text-[#0a0a0b] font-medium hover:shadow-[0_8px_30px_-6px_rgba(201,163,90,0.55)] transition-shadow"
+            className="relative overflow-hidden shimmer px-5 py-2.5 rounded-full text-sm bg-gradient-to-r from-[#c78f45] to-[#8c6a2b] text-[#120d0a] font-medium hover:shadow-[0_8px_30px_-6px_rgba(201,163,90,0.55)] transition-shadow"
           >
             Visit Store
           </a>
@@ -60,7 +60,7 @@ export default function Navbar() {
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="lg:hidden w-11 h-11 grid place-items-center rounded-full text-[#e6c98a]"
+          className="lg:hidden w-11 h-11 grid place-items-center rounded-full text-[#e2c78a]"
         >
           <div className="relative w-5 h-3.5">
             <span className={`absolute left-0 top-0 h-px w-full bg-current transition-transform ${open ? "translate-y-[7px] rotate-45" : ""}`} />
@@ -76,22 +76,22 @@ export default function Navbar() {
           open ? "max-h-[520px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="px-5 pb-6 pt-4 bg-[#0a0a0b]/95 backdrop-blur-xl border-t border-[#c9a35a]/15">
+        <div className="px-5 pb-6 pt-4 bg-[#120d0a]/95 backdrop-blur-xl border-t border-[#c78f45]/15">
           <nav className="flex flex-col gap-1">
             {NAV_LINKS.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="py-3 px-2 text-[#f5efe4]/85 border-b border-white/5 hover:text-[#e6c98a]"
+                className="py-3 px-2 text-[#e8d3b6]/85 border-b border-white/5 hover:text-[#e2c78a]"
               >
                 {l.label}
               </a>
             ))}
           </nav>
           <div className="flex gap-3 mt-5">
-            <a href={`tel:${STORE.phoneRaw}`} className="flex-1 text-center py-3 rounded-full border border-[#c9a35a]/40 text-[#e6c98a]">Call</a>
-            <a href="#contact" onClick={() => setOpen(false)} className="flex-1 text-center py-3 rounded-full bg-gradient-to-r from-[#c9a35a] to-[#8c6a2b] text-[#0a0a0b] font-medium">Visit</a>
+            <a href={`tel:${STORE.phoneRaw}`} className="flex-1 text-center py-3 rounded-full border border-[#c78f45]/40 text-[#e2c78a]">Call</a>
+            <a href="#contact" onClick={() => setOpen(false)} className="flex-1 text-center py-3 rounded-full bg-gradient-to-r from-[#c78f45] to-[#8c6a2b] text-[#120d0a] font-medium">Visit</a>
           </div>
         </div>
       </div>
