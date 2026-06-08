@@ -9,7 +9,7 @@ export default function Hero() {
         <img
           src={heroMobImg}
           alt="Aarav Beer & Wine Shop hero image for mobile"
-          className="w-full h-full object-cover slow-zoom"
+          className="w-full h-full object-cover slow-zoom opacity-70"
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#120d0a]/35 via-[#120d0a]/18 to-[#120d0a]/45" />
@@ -22,7 +22,7 @@ export default function Hero() {
         <img
           src={heroImg}
           alt="Aarav Beer & Wine Shop hero image"
-          className="w-full h-full object-cover slow-zoom"
+          className="w-full h-full object-cover slow-zoom opacity-70"
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#120d0a]/35 via-[#120d0a]/18 to-[#120d0a]/45" />
@@ -39,7 +39,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-8 reveal">
 
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4.8rem] leading-[1.02] tracking-tight text-white sm:text-[#f0c46a] pt-12 sm:pt-14 md:pt-16 lg:pt-18 max-w-5xl overflow-visible">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4.8rem] leading-[1.02] tracking-tight text-[#f0c46a] sm:text-[#f0c46a] pt-12 sm:pt-14 md:pt-16 lg:pt-18 max-w-5xl overflow-visible">
               Your Trusted Beer & Wine
                  Shop in <span className="relative inline-block">
                 Vashi, Mumbai.
@@ -47,7 +47,7 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="mt-10 sm:mt-12 md:mt-14 text-lg md:text-xl text-white/95 sm:text-[#e7bf67]/95 max-w-2xl leading-relaxed font-light">
+            <p className="mt-10 sm:mt-12 md:mt-14 text-lg md:text-xl text-[#e7bf67]/95 sm:text-[#e7bf67]/95 max-w-2xl leading-relaxed font-light">
               Explore a thoughtfully stocked range of beer, wine, whisky, rum, vodka and premium spirits — handpicked for your neighbourhood, served with a smile.
             </p>
 
