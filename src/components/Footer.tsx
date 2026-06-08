@@ -1,4 +1,5 @@
 import { NAV_LINKS, STORE } from "../data";
+import logo from "../assets/logoo.png";
 
 export default function Footer() {
   return (
@@ -9,15 +10,12 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-5">
             <div className="flex items-center gap-3">
-              <span className="relative w-12 h-12 rounded-full grid place-items-center bg-gradient-to-br from-[#c78f45] via-[#8c6a2b] to-[#7a231f]">
-                <span className="absolute inset-[2px] rounded-full bg-[#120d0a] grid place-items-center">
-                  <span className="font-serif text-[#e2c78a] text-xl">A</span>
-                </span>
-              </span>
-              <div>
-                <div className="font-serif text-xl text-[#e8d3b6]">Aarav Beer & Wine</div>
-                <div className="text-[10px] tracking-[0.3em] uppercase text-[#c78f45]">Vashi · Navi Mumbai</div>
-              </div>
+              <img
+                src={logo}
+                alt="Aarav Beer & Wine Shop logo"
+                className="h-14 w-32 object-contain rounded-none bg-transparent"
+              />
+              
             </div>
             <p className="mt-5 text-[#e8d3b6]/60 leading-relaxed max-w-md">
               Your trusted neighbourhood beer, wine and premium spirits shop in Sector 19C, Vashi.
@@ -93,7 +91,6 @@ export default function Footer() {
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-[#e8d3b6]/45 text-center md:text-left">
             © {new Date().getFullYear()} Aarav Beer & Wine Shop. All rights reserved.
-            Crafted with care in Navi Mumbai.
           </p>
           <p className="text-[10px] text-[#e8d3b6]/40 tracking-wider uppercase text-center">
             Drink Responsibly · 21+ Only · Licensed Retailer

@@ -17,11 +17,11 @@ export default function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#120d0a]/85 backdrop-blur-xl border-b border-[#c78f45]/15 py-2"
-          : "bg-transparent py-2"
+          ? "bg-[#120d0a]/95 backdrop-blur-xl border-b border-[#c78f45]/15 py-2"
+          : "bg-[#120d0a]/95 backdrop-blur-md py-2"
       }`}
     >
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-start gap-30 lg: flex justify-between h-20">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
         <a href="#home" className="flex items-center group ">
           <img
             src={logo}
@@ -30,7 +30,7 @@ export default function Navbar() {
           />
         </a>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden xl:flex items-center gap-8">
           {NAV_LINKS.map((l) => (
             <a
               key={l.href}
@@ -42,7 +42,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden xl:flex items-center gap-3">
           <a
             href={`tel:${STORE.phoneRaw}`}
             className="text-sm text-[#e8d3b6]/80 hover:text-[#e2c78a] transition-colors"
@@ -60,7 +60,7 @@ export default function Navbar() {
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="lg:hidden w-11 h-11 grid place-items-center rounded-full text-[#e2c78a]"
+          className="xl:hidden w-11 h-11 grid place-items-center rounded-full border border-[#c78f45]/25 bg-[#120d0a]/90 text-[#e2c78a] shadow-lg shadow-black/30"
         >
           <div className="relative w-5 h-3.5">
             <span className={`absolute left-0 top-0 h-px w-full bg-current transition-transform ${open ? "translate-y-[7px] rotate-45" : ""}`} />
@@ -72,11 +72,11 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-[max-height,opacity] duration-500 ${
+        className={`xl:hidden overflow-hidden transition-[max-height,opacity] duration-500 ${
           open ? "max-h-[520px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="px-5 pb-6 pt-4 bg-[#120d0a]/95 backdrop-blur-xl border-t border-[#c78f45]/15">
+        <div className="px-5 pb-6 pt-4 bg-[#120d0a]/98 border-t border-[#c78f45]/15 shadow-2xl shadow-black/30">
           <nav className="flex flex-col gap-1">
             {NAV_LINKS.map((l) => (
               <a

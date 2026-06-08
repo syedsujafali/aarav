@@ -11,9 +11,9 @@ export default function Hero() {
           className="w-full h-full object-cover slow-zoom"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#120d0a]/85 via-[#120d0a]/65 to-[#120d0a]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_40%,rgba(201,163,90,0.18),transparent_60%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_20%,rgba(90,26,35,0.35),transparent_60%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#120d0a]/35 via-[#120d0a]/18 to-[#120d0a]/45" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_40%,rgba(201,163,90,0.08),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_20%,rgba(90,26,35,0.10),transparent_60%)]" />
         <div className="absolute inset-0 grain opacity-40" />
       </div>
 
@@ -21,24 +21,23 @@ export default function Hero() {
       <div className="absolute top-1/4 -left-20 w-72 h-72 rounded-full bg-[#c78f45]/10 blur-3xl float-soft" />
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 rounded-full bg-[#7a231f]/30 blur-3xl float-soft" style={{ animationDelay: "2s" }} />
 
-      <div className="relative z-10 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-20">
+      <div className="relative z-10 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-48 sm:pt-52 md:pt-56 lg:pt-64 pb-28 sm:pb-32 md:pb-36">
         <div className="grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-8 reveal">
 
-            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.02] tracking-tight text-[#e8d3b6] pt-10">
-              Your Trusted{" "}
-              <span className="text-gold-gradient italic">Beer & Wine</span>{" "}
-              Shop in <span className="relative inline-block">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4.8rem] leading-[1.02] tracking-tight text-white sm:text-[#f0c46a] pt-12 sm:pt-14 md:pt-16 lg:pt-18 max-w-5xl overflow-visible">
+              Your Trusted Beer & Wine
+                 Shop in <span className="relative inline-block">
                 Vashi
                 <span className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c78f45] to-transparent" />
               </span>
             </h1>
 
-            <p className="mt-7 text-lg md:text-xl text-[#e8d3b6]/75 max-w-2xl leading-relaxed font-light">
+            <p className="mt-10 sm:mt-12 md:mt-14 text-lg md:text-xl text-white/95 sm:text-[#e7bf67]/95 max-w-2xl leading-relaxed font-light">
               Explore a thoughtfully stocked range of beer, wine, whisky, rum, vodka and premium spirits — handpicked for your neighbourhood, served with a smile.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-14 sm:mt-16 md:mt-18 flex flex-wrap gap-4">
               <a
                 href="#categories"
                 className="group relative overflow-hidden shimmer px-8 py-4 rounded-full bg-gradient-to-r from-[#c78f45] via-[#e2c78a] to-[#c78f45] text-[#120d0a] font-medium tracking-wide hover:shadow-[0_15px_45px_-10px_rgba(201,163,90,0.6)] transition-all"
@@ -62,18 +61,7 @@ export default function Hero() {
             </div>
 
             {/* Trust strip */}
-            <div className="mt-14 grid grid-cols-3 gap-6 max-w-xl">
-              {[
-                { n: "500+", l: "Products in Stock" },
-                { n: "15+", l: "Years Trusted" },
-                { n: "4.8★", l: "Customer Rating" },
-              ].map((s) => (
-                <div key={s.l} className="border-l border-[#c78f45]/30 pl-4">
-                  <div className="font-serif text-3xl text-gold-gradient">{s.n}</div>
-                  <div className="text-xs text-[#e8d3b6]/55 mt-1 uppercase tracking-wider">{s.l}</div>
-                </div>
-              ))}
-            </div>
+            
           </div>
         </div>
       </div>

@@ -113,10 +113,7 @@ export default function Contact() {
               />
               <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-[#c78f45]/10 rounded-2xl" />
               {/* Floating pin label */}
-              <div className="pointer-events-none absolute top-5 left-5 px-4 py-2.5 rounded-full bg-[#120d0a]/85 backdrop-blur-md border border-[#c78f45]/30 text-sm text-[#e8d3b6] flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-[#c78f45] animate-pulse" />
-                Aarav · Sector 19C, Vashi
-              </div>
+              
             </div>
           </div>
         </div>

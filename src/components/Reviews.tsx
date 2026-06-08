@@ -25,11 +25,11 @@ export default function Reviews() {
         />
 
         <div className="reveal mt-16 relative">
-          <div className="relative rounded-3xl bg-[#120d0a]/70 border border-[#c78f45]/15 p-8 md:p-14 backdrop-blur-sm overflow-hidden">
+          <div className="relative rounded-3xl bg-[#120d0a]/70 border border-[#c78f45]/15 p-6 sm:p-8 md:p-14 backdrop-blur-sm overflow-visible">
             {/* Big quote */}
             <div className="absolute -top-8 left-6 text-[180px] font-serif text-[#c78f45]/10 leading-none select-none">"</div>
 
-            <div className="relative min-h-[260px]">
+            <div className="relative min-h-[320px] sm:min-h-[280px] md:min-h-[260px]">
               {REVIEWS.map((r, i) => (
                 <div
                   key={i}
@@ -42,7 +42,7 @@ export default function Reviews() {
                       <span key={k} className="text-[#e2c78a] text-lg">★</span>
                     ))}
                   </div>
-                  <p className="font-serif text-2xl md:text-3xl text-[#e8d3b6] leading-relaxed italic">
+                  <p className="font-serif text-xl sm:text-2xl md:text-3xl text-[#e8d3b6] leading-relaxed italic break-words">
                     "{r.text}"
                   </p>
                   <div className="mt-8 flex items-center gap-4">
