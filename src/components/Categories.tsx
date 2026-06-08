@@ -46,9 +46,7 @@ export default function Categories() {
                     ))}
                   </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#120d0a] via-[#120d0a]/40 to-transparent" />
-                <div className="absolute top-4 left-4 w-11 h-11 rounded-full grid place-items-center bg-[#120d0a]/70 backdrop-blur-md border border-[#c78f45]/30 text-xl">
-                  {c.icon}
-                </div>
+                
                 <div className="absolute bottom-4 left-5 right-5">
                   <div className="text-[10px] tracking-[0.3em] uppercase text-[#c78f45] mb-1">{c.tagline}</div>
                   <h3 className="font-serif text-3xl text-[#e8d3b6]">{c.name}</h3>

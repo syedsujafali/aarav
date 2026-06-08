@@ -28,49 +28,49 @@ export const CATEGORIES = [
     tagline: "Chilled. Crisp. Refreshing.",
     desc: "Lagers, wheat ales and craft brews stocked cold in our refrigerators.",
     img: beerImg,
-    icon: "🍺",
+    
   },
   {
     name: "Wine",
     tagline: "Reds, Whites & Rosé",
     desc: "Curated selection of Indian and popular international wines for every palate.",
     img: wineImg,
-    icon: "🍷",
+   
   },
   {
     name: "Whisky",
     tagline: "Smooth. Aged. Bold.",
     desc: "From everyday pours to premium blends — Royal Stag, Blenders Pride & more.",
     img: whiskyImg,
-    icon: "🥃",
+    
   },
   {
     name: "Rum",
     tagline: "Warm. Rich. Classic.",
     desc: "Dark, white and spiced rums — perfect for any season or celebration.",
     img: rumImg,
-    icon: "🍹",
+    
   },
   {
     name: "Vodka",
     tagline: "Clean. Crisp. Versatile.",
     desc: "Smirnoff, Magic Moments and more — ready for mixers and cocktails.",
     img: vodkaImg,
-    icon: "🍸",
+    
   },
   {
     name: "Gin",
     tagline: "Botanical. Aromatic.",
     desc: "Classic London Dry and Indian craft gins for your perfect G&T.",
     img: ginImg,
-    icon: "🌿",
+    
   },
   {
     name: "Brandy",
     tagline: "Smooth. Warming.",
     desc: "Premium brandies for the connoisseur and the casual sipper alike.",
     img: whiskyImg,
-    icon: "🥂",
+    
   },
 ];
 
