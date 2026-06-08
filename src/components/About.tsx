@@ -1,7 +1,7 @@
-import about1 from '../assets/1.jpeg';
-import about2 from '../assets/2.jpeg';
-import about3 from '../assets/3.jpeg';
+import about6 from '../assets/7.jpeg';
+import about5 from '../assets/6.jpeg';
 import about4 from '../assets/4.jpeg';
+import about7 from '../assets/8.jpeg';
 
 export default function About() {
   const highlights = [
@@ -21,7 +21,7 @@ export default function About() {
             <div className="relative grid grid-cols-5 grid-rows-6 gap-4 h-[560px]">
               <div className="col-span-3 row-span-4 relative rounded-2xl overflow-hidden border border-[#c78f45]/20 shadow-2xl shadow-black/50">
                 <img
-                  src={about1}
+                  src={about6}
                   alt="Rows of wine bottles on store shelves"
                   loading="lazy"
                   className="w-full h-full object-cover"
@@ -29,7 +29,7 @@ export default function About() {
               </div>
               <div className="col-span-2 row-span-3 col-start-4 relative rounded-2xl overflow-hidden border border-[#c78f45]/20 shadow-2xl shadow-black/50">
                 <img
-                  src={about2}
+                  src={about5}
                   alt="Wine shelves in a shop interior"
                   loading="lazy"
                   className="w-full h-full object-cover"
@@ -37,7 +37,7 @@ export default function About() {
               </div>
               <div className="col-span-2 row-span-3 col-start-4 row-start-4 relative rounded-2xl overflow-hidden border border-[#c78f45]/20 shadow-2xl shadow-black/50">
                 <img
-                  src={about3}
+                  src={about7}
                   alt="Whisky bottles on display in a shop"
                   loading="lazy"
                   className="w-full h-full object-cover"

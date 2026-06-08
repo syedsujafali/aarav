@@ -6,10 +6,11 @@ import vodkaImg from "./assets/vodka.png";
 import ginImg from "./assets/gin.png";
 import image1 from "./assets/1.jpeg";
 import image2 from "./assets/2.jpeg";
-import image3 from "./assets/3.jpeg";
 import image4 from "./assets/4.jpeg";
 import image5 from "./assets/5.jpeg";
-
+import image6 from "./assets/6.jpeg";
+import image7 from "./assets/7.jpeg";
+import image8 from "./assets/8.jpeg";
 
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
@@ -127,12 +128,13 @@ export const WHY_US = [
 export const GALLERY = [
   { src: image1, alt: "Warm, inviting display of premium bottles and spirits", span: "row-span-2" },
   { src: image2, alt: "Carefully arranged shelves with curated drink selections", span: "" },
-  { src: image3, alt: "Elegant bottle presentation in a boutique shop setting", span: "" },
   { src: image4, alt: "Close-up of premium spirits on a softly lit shelf", span: "row-span-2" },
   { src: image5, alt: "Stylish drink display with rich color and texture", span: "" },
   { src: image1, alt: "Featured bottle arrangement for a welcoming store vibe", span: "" },
   { src: image2, alt: "Freshly stocked liquor shelves in the shop", span: "" },
-  { src: image3, alt: "A polished selection of beverages for any occasion", span: "" },
+  { src: image6, alt: "Newly added store display featuring premium bottles", span: "" },
+  { src: image7, alt: "Fresh shelf setup with curated drinks and spirits", span: "" },
+  { src: image8, alt: "Clear board-focused store display for the gallery", span: "" },
 ];
 
 export const REVIEWS = [
