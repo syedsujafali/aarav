@@ -12,6 +12,14 @@ import image6 from "./assets/6.jpeg";
 import image7 from "./assets/7.jpeg";
 import image8 from "./assets/8.jpeg";
 
+type Category = {
+  name: string;
+  tagline: string;
+  desc: string;
+  img: string;
+  images?: string[];
+};
+
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "Categories", href: "#categories" },
@@ -22,7 +30,7 @@ export const NAV_LINKS = [
   { label: "Contact", href: "#contact" },
 ];
 
-export const CATEGORIES = [
+export const CATEGORIES: Category[] = [
   {
     name: "Beer",
     tagline: "Chilled. Crisp. Refreshing.",
