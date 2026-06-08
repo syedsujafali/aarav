@@ -20,7 +20,7 @@ export default function Reviews() {
       <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Customer Reviews"
-          title={<>What Our <span className="italic text-gold-gradient">Customers Say</span></>}
+          title={<>What Our <span className="italic text-gold-gradient">Customers Say.</span></>}
           subtitle="Real words from real people in our Vashi neighbourhood."
         />
 

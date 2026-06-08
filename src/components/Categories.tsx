@@ -8,7 +8,7 @@ export default function Categories() {
       <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Our Collection"
-          title={<>Featured <span className="italic text-gold-gradient">Categories</span></>}
+          title={<>Featured <span className="italic text-gold-gradient">Categories.</span></>}
           subtitle="From chilled beers to aged whiskies, find everything you need for any occasion — all under one roof in Vashi."
         />
 

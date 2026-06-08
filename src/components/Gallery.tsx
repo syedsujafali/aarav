@@ -21,7 +21,7 @@ export default function Gallery() {
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Store Gallery"
-          title={<>A Peek <span className="italic text-gold-gradient">Inside the Shop</span></>}
+          title={<>A Peek <span className="italic text-gold-gradient">Inside the Shop.</span></>}
           subtitle="A glimpse of our shelves, refrigerators and warmly-lit aisles in Vashi."
         />
 

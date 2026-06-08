@@ -1,10 +1,24 @@
 import heroImg from "../assets/hero6.png";
+import heroMobImg from "../assets/hero mob.jpeg";
 
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 md:hidden">
+        <img
+          src={heroMobImg}
+          alt="Aarav Beer & Wine Shop hero image for mobile"
+          className="w-full h-full object-cover slow-zoom"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#120d0a]/35 via-[#120d0a]/18 to-[#120d0a]/45" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_40%,rgba(201,163,90,0.08),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_20%,rgba(90,26,35,0.10),transparent_60%)]" />
+        <div className="absolute inset-0 grain opacity-40" />
+      </div>
+
+      <div className="absolute inset-0 hidden md:block">
         <img
           src={heroImg}
           alt="Aarav Beer & Wine Shop hero image"
@@ -28,7 +42,7 @@ export default function Hero() {
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4.8rem] leading-[1.02] tracking-tight text-white sm:text-[#f0c46a] pt-12 sm:pt-14 md:pt-16 lg:pt-18 max-w-5xl overflow-visible">
               Your Trusted Beer & Wine
                  Shop in <span className="relative inline-block">
-                Vashi
+                Vashi, Mumbai.
                 <span className="absolute -bottom-2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c78f45] to-transparent" />
               </span>
             </h1>

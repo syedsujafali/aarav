@@ -12,7 +12,7 @@ export default function Contact() {
       <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Get in Touch"
-          title={<>Visit, Call or <span className="italic text-gold-gradient">WhatsApp Us</span></>}
+          title={<>Visit, Call or <span className="italic text-gold-gradient">WhatsApp Us.</span></>}
           subtitle="Drop by the shop, or reach out to check stock before you visit. We're always happy to help."
         />
 

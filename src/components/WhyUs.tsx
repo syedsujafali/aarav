@@ -10,7 +10,7 @@ export default function WhyUs() {
       <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Why Choose Us"
-          title={<>The Aarav <span className="italic text-gold-gradient">Difference</span></>}
+          title={<>The Aarav <span className="italic text-gold-gradient">    Difference.</span></>}
           subtitle="Six simple reasons our regulars keep coming back — and why first-time visitors become regulars."
         />
 

@@ -10,7 +10,7 @@ export default function Brands() {
       <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Popular Brands"
-          title={<>Brands You <span className="italic text-gold-gradient">Know & Love</span></>}
+          title={<>Brands You <span className="italic text-gold-gradient">Know & Love.</span></>}
           subtitle="We stock the most loved brands across beer, wine and spirits — fresh, authentic and ready when you are."
         />
 
