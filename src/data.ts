@@ -185,7 +185,7 @@ export const STORE = {
   phone: "+91 72085 59666",
   phoneRaw: "917208559666",
   whatsapp: "917208559666",
-  email: "hello@aaravbeerwine.in",
+  email: "sandeep24081984@gmail.com",
   hours: [
     { day: "Monday – Saturday", time: "10:00 AM – 11:00 PM" },
     { day: "Sunday", time: "11:00 AM – 10:00 PM" },
