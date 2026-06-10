@@ -51,26 +51,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Hours card */}
-            <div className="rounded-2xl border border-[#c78f45]/20 bg-gradient-to-br from-[#1a140f] to-[#120d0a] p-7">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="w-10 h-10 rounded-full grid place-items-center bg-[#c78f45]/15 border border-[#c78f45]/30 text-[#e2c78a]">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </span>
-                <div className="text-[11px] tracking-[0.3em] uppercase text-[#c78f45]">Store Hours</div>
-              </div>
-              <ul className="space-y-3">
-                {STORE.hours.map((h) => (
-                  <li key={h.day} className="flex justify-between items-center pb-3 border-b border-white/5 last:border-0">
-                    <span className="text-[#e8d3b6]/80 text-sm">{h.day}</span>
-                    <span className="text-[#e2c78a] text-sm font-medium">{h.time}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
             {/* Action buttons */}
             <div className="grid grid-cols-2 gap-3">
               <a
