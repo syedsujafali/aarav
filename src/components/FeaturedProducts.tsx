@@ -35,7 +35,7 @@ export default function FeaturedProducts() {
                   className="absolute inset-0 z-20 sm:hidden"
                   aria-label={`Open ${product.name} image`}
                 />
-                <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#120d0a]/90 via-[#120d0a]/15 to-transparent" />
+                <div className="absolute inset-0 pointer-events-none bg-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
                   <span className="inline-flex rounded-full border border-[#c78f45]/25 bg-[#120d0a]/80 px-3 py-1 text-[11px] uppercase tracking-[0.35em] text-[#c78f45]">
                     {product.category}

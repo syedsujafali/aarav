@@ -50,7 +50,7 @@ export default function Categories() {
                           className="absolute inset-0 z-20 sm:hidden"
                           aria-label={`Open ${c.name} image`}
                         />
-                        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_50%_35%,transparent,rgba(0,0,0,0.28)_72%)]" />
+                        <div className="absolute inset-0 pointer-events-none bg-transparent" />
                       </div>
                     ))}
                   </div>
