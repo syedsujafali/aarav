@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { CATEGORIES } from "../data";
 import SectionHeader from "./SectionHeader";
 
 export default function Categories() {
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+
   return (
     <section id="categories" className="relative py-24 md:py-32 bg-[#120d0a]">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(201,163,90,0.06),transparent_60%)]" />
@@ -41,10 +44,9 @@ export default function Categories() {
                           loading="lazy"
                           className="h-full w-full object-contain p-4"
                         />
-                        <a
-                          href={src}
-                          target="_blank"
-                          rel="noreferrer"
+                        <button
+                          type="button"
+                          onClick={() => setSelectedImage({ src, alt: `${c.name} product ${imageIndex + 1}` })}
                           className="absolute inset-0 z-20 sm:hidden"
                           aria-label={`Open ${c.name} image`}
                         />
@@ -80,6 +82,23 @@ export default function Categories() {
           })}
         </div>
       </div>
+
+      {selectedImage && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#120d0a]/95 p-4 sm:p-8" onClick={() => setSelectedImage(null)}>
+          <div className="relative w-full max-w-3xl rounded-3xl border border-[#c78f45]/20 bg-[#170f0a] p-4 shadow-2xl shadow-black/60" onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              onClick={() => setSelectedImage(null)}
+              className="absolute -top-3 -right-3 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#c78f45]/30 bg-[#120d0a] text-[#e8d3b6] text-xl shadow-lg shadow-black/40"
+              aria-label="Close image"
+            >
+              ×
+            </button>
+            <img src={selectedImage.src} alt={selectedImage.alt} className="h-[80vh] w-full rounded-3xl object-contain" />
+            <p className="mt-4 text-sm text-[#e8d3b6]/80">{selectedImage.alt}</p>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
