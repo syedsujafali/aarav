@@ -1,5 +1,5 @@
 const ITEMS = [
-  "Beer", "Wine", "Whisky", "Rum", "Vodka", "Gin", "Brandy", "Champagne", "Tequila", "Cocktails",
+  "Chilled Beer", "Normal Beer", "Flavoured Beer", "Wine",
 ];
 
 export default function Marquee() {

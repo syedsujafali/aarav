@@ -48,7 +48,7 @@ export default function Hero() {
             </h1>
 
             <p className="mt-10 sm:mt-12 md:mt-14 text-lg md:text-xl text-[#e7bf67]/95 sm:text-[#e7bf67]/95 max-w-2xl leading-relaxed font-light">
-              Explore a thoughtfully stocked range of beer, wine, whisky, rum, vodka and premium spirits — handpicked for your neighbourhood, served with a smile.
+              Explore a thoughtfully stocked range of chilled, normal and flavoured beers plus a curated wine selection — handpicked for your neighbourhood, served with a smile.
             </p>
 
             <div className="mt-14 sm:mt-16 md:mt-18 flex flex-wrap gap-4">

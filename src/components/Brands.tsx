@@ -11,7 +11,7 @@ export default function Brands() {
         <SectionHeader
           eyebrow="Popular Brands"
           title={<>Brands You <span className="italic text-gold-gradient">Know & Love.</span></>}
-          subtitle="We stock the most loved brands across beer, wine and spirits — fresh, authentic and ready when you are."
+          subtitle="We stock the most loved beer and wine brands — fresh, authentic and ready when you are."
         />
 
         <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-5">

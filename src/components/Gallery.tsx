@@ -29,8 +29,8 @@ export default function Gallery() {
           {GALLERY.map((g, i) => (
             <figure
               key={i}
-              onClick={() => setSelectedImage(g)}
-              className={`reveal group relative overflow-hidden rounded-2xl border border-white/5 hover:border-[#c78f45]/40 transition-all cursor-pointer ${g.span}`}
+              onClick={() => window.innerWidth < 640 && setSelectedImage(g)}
+              className={`reveal group relative overflow-hidden rounded-2xl border border-white/5 hover:border-[#c78f45]/40 transition-all ${g.span} ${window.innerWidth < 640 ? "cursor-pointer" : "cursor-auto"}`}
               style={{ transitionDelay: `${i * 60}ms` }}
             >
               <img

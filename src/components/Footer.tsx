@@ -18,7 +18,7 @@ export default function Footer() {
               
             </div>
             <p className="mt-5 text-[#e8d3b6]/60 leading-relaxed max-w-md">
-              Your trusted neighbourhood beer, wine and premium spirits shop in Sector 19C, Vashi.
+              Your trusted neighbourhood beer and wine shop in Sector 19C, Vashi.
               Wide selection, genuine products, friendly service — since years.
             </p>
 

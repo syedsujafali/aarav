@@ -1,9 +1,19 @@
 import beerImg from "./assets/beer.png";
 import wineImg from "./assets/wine.png";
-import whiskyImg from "./assets/whisky.png";
-import rumImg from "./assets/rum.png";
-import vodkaImg from "./assets/vodka.png";
-import ginImg from "./assets/gin.png";
+import redWineImg from "./assets/red wine.jpeg";
+import whiteWineImg from "./assets/white wine.jpeg";
+import roseWineImg from "./assets/rose wine.jpeg";
+import fruitWineImg from "./assets/fruit wine.jpeg";
+import cronoExtraImg from "./assets/Crono Extra.jpeg";
+import londonPilsnerImg from "./assets/London Pilsner.jpeg";
+import budweiserBeerImg from "./assets/Budweiser beer.jpeg";
+import kangarooBeerImg from "./assets/Kangaroo Beer.jpeg";
+import shirazCabernetImg from "./assets/shiraz cabernet.jpeg";
+import cheninBlancImg from "./assets/chenin blanc.jpeg";
+import kingfisherImg from "./assets/kingfisher.jpeg";
+import broRedImg from "./assets/bro red.jpeg";
+import peaksStrawberryImg from "./assets/peaks strawberry.jpeg";
+import samsonXxxImg from "./assets/samson xxx.jpeg";
 import image1 from "./assets/1.jpeg";
 import image2 from "./assets/2.jpeg";
 import image4 from "./assets/4.jpeg";
@@ -32,78 +42,137 @@ export const NAV_LINKS = [
 
 export const CATEGORIES: Category[] = [
   {
-    name: "Beer",
-    tagline: "Chilled. Crisp. Refreshing.",
-    desc: "Lagers, wheat ales and craft brews stocked cold in our refrigerators.",
-    img: beerImg,
-    
+    name: "Red Wine",
+    tagline: "Rich & velvety",
+    desc: "A handpicked selection of red wines for dinner, pairing, and premium gifting.",
+    img: redWineImg,
   },
   {
-    name: "Wine",
-    tagline: "Reds, Whites & Rosé",
-    desc: "Curated selection of Indian and popular international wines for every palate.",
-    img: wineImg,
-   
+    name: "White Wine",
+    tagline: "Crisp & refreshing",
+    desc: "Chilled white wines that bring bright fruit and minerality to your table.",
+    img: whiteWineImg,
   },
   {
-    name: "Whisky",
-    tagline: "Smooth. Aged. Bold.",
-    desc: "From everyday pours to premium blends — Royal Stag, Blenders Pride & more.",
-    img: whiskyImg,
-    
+    name: "Rosé Wine",
+    tagline: "Bright & elegant",
+    desc: "Rosé wines with floral notes, perfect for brunch, evenings and modern menus.",
+    img: roseWineImg,
   },
   {
-    name: "Rum",
-    tagline: "Warm. Rich. Classic.",
-    desc: "Dark, white and spiced rums — perfect for any season or celebration.",
-    img: rumImg,
-    
+    name: "Fruit Wine",
+    tagline: "Sweet & vibrant",
+    desc: "Premium fruit wines crafted for a lush, juicy tasting experience.",
+    img: fruitWineImg,
   },
   {
-    name: "Vodka",
-    tagline: "Clean. Crisp. Versatile.",
-    desc: "Smirnoff, Magic Moments and more — ready for mixers and cocktails.",
-    img: vodkaImg,
-    
+    name: "Premium Beer",
+    tagline: "Crafted excellence",
+    desc: "Premium beer labels selected for bold flavor, refined packaging and quality pours.",
+    img: cronoExtraImg,
   },
   {
-    name: "Gin",
-    tagline: "Botanical. Aromatic.",
-    desc: "Classic London Dry and Indian craft gins for your perfect G&T.",
-    img: ginImg,
-    
+    name: "Strong Beer",
+    tagline: "Robust & full-bodied",
+    desc: "High-strength beer options for a stronger pour with rich malt character.",
+    img: londonPilsnerImg,
   },
   {
-    name: "Brandy",
-    tagline: "Smooth. Warming.",
-    desc: "Premium brandies for the connoisseur and the casual sipper alike.",
-    img: whiskyImg,
-    
+    name: "Budweiser beer",
+    tagline: "Iconic lager",
+    desc: "Budweiser in its classic form — balanced, smooth and instantly recognizable.",
+    img: budweiserBeerImg,
+  },
+  {
+    name: "Kangaroo Premium Beer",
+    tagline: "Premium beer brand",
+    desc: "A strong premium beer label with refined taste and a confident finish.",
+    img: kangarooBeerImg,
   },
 ];
 
 export const BRANDS = [
   { name: "Kingfisher", type: "Beer" },
   { name: "Budweiser", type: "Beer" },
-  { name: "Tuborg", type: "Beer" },
-  { name: "Carlsberg", type: "Beer" },
-  { name: "Bira 91", type: "Craft Beer" },
-  { name: "Heineken", type: "Beer" },
-  { name: "Royal Stag", type: "Whisky" },
-  { name: "Blenders Pride", type: "Whisky" },
-  { name: "Signature", type: "Whisky" },
-  { name: "Antiquity", type: "Whisky" },
-  { name: "Smirnoff", type: "Vodka" },
-  { name: "Magic Moments", type: "Vodka" },
-  { name: "Bacardi", type: "Rum" },
-  { name: "Sula", type: "Wine" },
-  { name: "Fratelli", type: "Wine" },
+  { name: "London Pilsner Strong", type: "Beer" },
+  { name: "Kangaroo Premium Beer", type: "Beer" },
+  { name: "Bro Red California Reserve", type: "Beer" },
+  { name: "Samson XXX", type: "Beer" },
+  { name: "Sula Vineyards", type: "Wine" },
+  { name: "Peaks", type: "Wine" },
+  { name: "Sula Rosé", type: "Wine" },
+  { name: "Sula Shiraz", type: "Wine" },
+  { name: "Peaks Jamun", type: "Wine" },
+  { name: "Peaks Strawberry", type: "Wine" },
+];
+
+export const FEATURED_PRODUCTS = [
+  {
+    name: "Sula Vineyards Rosé",
+    category: "Rosé Wine",
+    img: roseWineImg,
+  },
+  {
+    name: "Sula Shiraz Cabernet",
+    category: "Red Wine",
+    img: shirazCabernetImg,
+  },
+  {
+    name: "Sula Chenin Blanc",
+    category: "White Wine",
+    img: cheninBlancImg,
+  },
+  {
+    name: "Sula Dindori",
+    category: "Red Wine",
+    img: whiteWineImg,
+  },
+  {
+    name: "Peaks Pure Jamun Wine",
+    category: "Fruit Wine",
+    img: fruitWineImg,
+  },
+  {
+    name: "Peaks Strawberry Wine",
+    category: "Fruit Wine",
+    img: peaksStrawberryImg,
+  },
+  {
+    name: "Kingfisher",
+    category: "Premium Beer",
+    img: kingfisherImg,
+  },
+  {
+    name: "Budweiser",
+    category: "Budweiser beer",
+    img: budweiserBeerImg,
+  },
+  {
+    name: "London Pilsner Strong",
+    category: "Strong Beer",
+    img: londonPilsnerImg,
+  },
+  {
+    name: "Kangaroo Premium Beer",
+    category: "Premium Beer",
+    img: kangarooBeerImg,
+  },
+  {
+    name: "Bro Red California Reserve",
+    category: "Premium Beer",
+    img: broRedImg,
+  },
+  {
+    name: "Samson XXX",
+    category: "Strong Beer",
+    img: samsonXxxImg,
+  },
 ];
 
 export const WHY_US = [
   {
     title: "Wide Selection",
-    desc: "Hundreds of beers, wines, whiskies and spirits — all under one roof.",
+    desc: "Hundreds of chilled, regular and flavoured beers plus wines — all under one roof.",
     icon: "✦",
   },
   {
@@ -134,15 +203,15 @@ export const WHY_US = [
 ];
 
 export const GALLERY = [
-  { src: image1, alt: "Warm, inviting display of premium bottles and spirits", span: "row-span-2" },
-  { src: image2, alt: "Carefully arranged shelves with curated drink selections", span: "" },
-  { src: image4, alt: "Close-up of premium spirits on a softly lit shelf", span: "row-span-2" },
+  { src: image1, alt: "Warm, inviting display of chilled beer and wine bottles", span: "row-span-2" },
+  { src: image2, alt: "Carefully arranged shelves with curated beer and wine selections", span: "" },
+  { src: image4, alt: "Close-up of beer and wine bottles on a softly lit shelf", span: "row-span-2" },
   { src: image5, alt: "Stylish drink display with rich color and texture", span: "" },
   { src: image1, alt: "Featured bottle arrangement for a welcoming store vibe", span: "" },
-  { src: image2, alt: "Freshly stocked liquor shelves in the shop", span: "" },
-  { src: image6, alt: "Newly added store display featuring premium bottles", span: "" },
-  { src: image7, alt: "Fresh shelf setup with curated drinks and spirits", span: "" },
-  { src: image8, alt: "Clear board-focused store display for the gallery", span: "" },
+  { src: image2, alt: "Freshly stocked beer and wine shelves in the shop", span: "" },
+  { src: image6, alt: "Newly added store display featuring beer and wine bottles", span: "" },
+  { src: image7, alt: "Fresh shelf setup with curated beer and wine selections", span: "" },
+  { src: image8, alt: "Clear shop display focusing on beer and wine products", span: "" },
 ];
 
 export const REVIEWS = [
@@ -172,9 +241,9 @@ export const REVIEWS = [
   },
   {
     name: "Vikram Singh",
-    role: "Whisky Enthusiast",
+    role: "Beer & Wine Lover",
     rating: 5,
-    text: "Whether it's a daily Royal Stag or a special Antiquity Blue evening, Aarav has the stock and the smile. The shop has a warm, welcoming vibe.",
+    text: "Whether it's a chilled beer after work or a bottle of wine for the weekend, Aarav has the stock and the smile. The shop has a warm, welcoming vibe.",
   },
 ];
 

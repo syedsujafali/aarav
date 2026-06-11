@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
 import Categories from "./components/Categories";
+import FeaturedProducts from "./components/FeaturedProducts";
 import Brands from "./components/Brands";
 import About from "./components/About";
 import WhyUs from "./components/WhyUs";
@@ -22,6 +23,7 @@ export default function App() {
         <Hero />
         <Marquee />
         <Categories />
+        <FeaturedProducts />
         <Brands />
         <About />
         <WhyUs />

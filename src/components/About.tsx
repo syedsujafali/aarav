@@ -6,7 +6,7 @@ import about7 from '../assets/8.jpeg';
 export default function About() {
   const highlights = [
     "Trusted neighbourhood store since years",
-    "Wide product selection — beer to premium spirits",
+    "Wide product selection — chilled beer, normal beer, flavoured beer and wine",
     "Friendly, knowledgeable staff",
     "Convenient Sector 19C, Vashi location",
     "Fresh, well-stocked inventory updated daily",
@@ -38,7 +38,7 @@ export default function About() {
               <div className="col-span-2 row-span-3 col-start-4 row-start-4 relative rounded-2xl overflow-hidden border border-[#c78f45]/20 shadow-2xl shadow-black/50">
                 <img
                   src={about7}
-                  alt="Whisky bottles on display in a shop"
+                  alt="Assorted beer and wine bottles on display in a shop"
                   loading="lazy"
                   className="w-full h-full object-cover"
                 />
