@@ -1,7 +1,17 @@
+import { useState } from "react";
 import { BRANDS } from "../data";
 import SectionHeader from "./SectionHeader";
 
-export default function Brands() {
+type BrandsProps = {
+  showToggle?: boolean;
+};
+
+export default function Brands({ showToggle = true }: BrandsProps) {
+  const [showAll, setShowAll] = useState(false);
+  const effectiveShowAll = showToggle ? showAll : true;
+  const visibleBrands = effectiveShowAll ? BRANDS : BRANDS.slice(0, 4);
+  const hasMoreBrands = BRANDS.length > 4;
+
   return (
     <section id="brands" className="relative py-24 md:py-32 bg-gradient-to-b from-[#120d0a] via-[#1a140f] to-[#120d0a] overflow-hidden">
       <div className="absolute inset-0 grain opacity-30" />
@@ -14,11 +24,11 @@ export default function Brands() {
           subtitle="We stock the most loved beer and wine brands — fresh, authentic and ready when you are."
         />
 
-        <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-5">
-          {BRANDS.map((b, i) => (
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+          {visibleBrands.map((b, i) => (
             <div
               key={b.name}
-              className="reveal group relative p-6 rounded-xl bg-[#1a140f]/80 border border-white/5 hover:border-[#c78f45]/50 transition-all duration-500 backdrop-blur-sm hover:-translate-y-1"
+              className="group relative p-6 rounded-xl bg-[#1a140f]/80 border border-white/5 hover:border-[#c78f45]/50 transition-all duration-500 backdrop-blur-sm hover:-translate-y-1"
               style={{ transitionDelay: `${i * 30}ms` }}
             >
               <div className="text-[10px] tracking-[0.3em] uppercase text-[#c78f45]/70 mb-2">{b.type}</div>
@@ -34,6 +44,18 @@ export default function Brands() {
             </div>
           ))}
         </div>
+
+        {showToggle && hasMoreBrands && (
+          <div className="mt-10 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAll((prev) => !prev)}
+              className="inline-flex items-center rounded-full border border-[#c78f45]/40 bg-[#120d0a]/90 px-6 py-3 text-sm font-semibold text-[#e8d3b6] transition hover:border-[#c78f45] hover:bg-[#1b140d]"
+            >
+              {showAll ? "Show Less" : "View More"}
+            </button>
+          </div>
+        )}
 
         <p className="reveal mt-10 text-center text-sm text-[#e8d3b6]/50">
           …and many more. Call us to check availability before you visit.

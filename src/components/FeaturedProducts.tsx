@@ -2,8 +2,21 @@ import { useState } from "react";
 import SectionHeader from "./SectionHeader";
 import { FEATURED_PRODUCTS } from "../data";
 
-export default function FeaturedProducts() {
+type FeaturedProductsProps = {
+  showToggle?: boolean;
+};
+
+export default function FeaturedProducts({ showToggle = true }: FeaturedProductsProps) {
   const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+  const [showAll, setShowAll] = useState(false);
+  const beerProducts = FEATURED_PRODUCTS.filter((product) => product.category.toLowerCase().includes("beer"));
+  const wineProducts = FEATURED_PRODUCTS.filter((product) => !product.category.toLowerCase().includes("beer"));
+  const firstRowProducts = [...beerProducts.slice(0, 2), ...wineProducts.slice(0, 2)];
+  const remainingProducts = FEATURED_PRODUCTS.filter(
+    (product) => !firstRowProducts.some((rowProduct) => rowProduct.name === product.name)
+  );
+  const effectiveShowAll = showToggle ? showAll : true;
+  const visibleProducts = effectiveShowAll ? [...firstRowProducts, ...remainingProducts] : firstRowProducts;
 
   return (
     <section id="featured" className="relative py-24 md:py-32 bg-[#1a140f] overflow-hidden">
@@ -15,8 +28,8 @@ export default function FeaturedProducts() {
           subtitle="Hand-selected beer and wine products with a modern presentation style and clean premium card layout."
         />
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {FEATURED_PRODUCTS.map((product, index) => (
+        <div className="mt-16 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          {visibleProducts.map((product, index) => (
             <article
               key={product.name}
               className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#120d0a]/80 shadow-[0_30px_80px_-50px_rgba(0,0,0,0.8)] transition-all duration-500 hover:-translate-y-1 hover:border-[#c78f45]/40"
@@ -55,6 +68,18 @@ export default function FeaturedProducts() {
             </article>
           ))}
         </div>
+
+        {showToggle && (
+          <div className="mt-10 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAll((prev) => !prev)}
+              className="inline-flex items-center rounded-full border border-[#c78f45]/40 bg-[#120d0a]/90 px-6 py-3 text-sm font-semibold text-[#e8d3b6] transition hover:border-[#c78f45] hover:bg-[#1b140d]"
+            >
+              {showAll ? "Show Less" : "View More"}
+            </button>
+          </div>
+        )}
       </div>
 
       {selectedImage && (

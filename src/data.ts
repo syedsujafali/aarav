@@ -31,13 +31,15 @@ type Category = {
 };
 
 export const NAV_LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "Categories", href: "#categories" },
-  { label: "Brands", href: "#brands" },
-  { label: "About", href: "#about" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Categories", href: "/categories" },
+  { label: "Featured", href: "/featured" },
+  { label: "Brands", href: "/brands" },
+  { label: "About", href: "/about" },
+  { label: "Why Us", href: "/why-us" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Reviews", href: "/reviews" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const CATEGORIES: Category[] = [

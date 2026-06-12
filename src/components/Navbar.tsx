@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/logoo.png";
 import { NAV_LINKS, STORE } from "../data";
 
@@ -22,23 +23,27 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-        <a href="#home" className="flex items-center group ">
+        <Link to="/" className="flex items-center group ">
           <img
             src={logo}
             alt="Aarav Beer & Wine Shop logo"
             className="h-25 w-64 sm:h-20 sm:w-50 object-contain rounded-none shadow-none p-0 bg-transparent opacity-90"
           />
-        </a>
+        </Link>
 
         <nav className="hidden xl:flex items-center gap-8">
           {NAV_LINKS.map((l) => (
-            <a
+            <NavLink
               key={l.href}
-              href={l.href}
-              className="relative text-sm text-[#e8d3b6]/80 hover:text-[#e2c78a] transition-colors after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-[#c78f45] after:transition-all hover:after:w-full"
+              to={l.href}
+              className={({ isActive }) =>
+                `relative text-sm transition-colors after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-[#c78f45] after:transition-all hover:after:w-full ${
+                  isActive ? "text-[#e2c78a] after:w-full" : "text-[#e8d3b6]/80 hover:text-[#e2c78a]"
+                }`
+              }
             >
               {l.label}
-            </a>
+            </NavLink>
           ))}
         </nav>
 
@@ -79,14 +84,14 @@ export default function Navbar() {
         <div className="px-5 pb-6 pt-4 bg-[#120d0a]/98 border-t border-[#c78f45]/15 shadow-2xl shadow-black/30">
           <nav className="flex flex-col gap-1">
             {NAV_LINKS.map((l) => (
-              <a
+              <Link
                 key={l.href}
-                href={l.href}
+                to={l.href}
                 onClick={() => setOpen(false)}
                 className="py-3 px-2 text-[#e8d3b6]/85 border-b border-white/5 hover:text-[#e2c78a]"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="flex gap-3 mt-5">
