@@ -1,24 +1,10 @@
 import heroImg from "../assets/hero6.png";
-import heroMobImg from "../assets/hero mob.jpeg";
 
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
-      <div className="absolute inset-0 md:hidden">
-        <img
-          src={heroMobImg}
-          alt="Aarav Beer & Wine Shop hero image for mobile"
-          className="w-full h-full object-cover slow-zoom opacity-70"
-          loading="eager"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#120d0a]/35 via-[#120d0a]/18 to-[#120d0a]/45" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_40%,rgba(201,163,90,0.08),transparent_60%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_20%,rgba(90,26,35,0.10),transparent_60%)]" />
-        <div className="absolute inset-0 grain opacity-40" />
-      </div>
-
-      <div className="absolute inset-0 hidden md:block">
+      <div className="absolute inset-0">
         <img
           src={heroImg}
           alt="Aarav Beer & Wine Shop hero image"
@@ -48,12 +34,12 @@ export default function Hero() {
             </h1>
 
             <p className="mt-10 sm:mt-12 md:mt-14 text-lg md:text-xl text-[#e7bf67]/95 sm:text-[#e7bf67]/95 max-w-2xl leading-relaxed font-light">
-              Explore a thoughtfully stocked range of chilled, normal and flavoured beers plus a curated wine selection — handpicked for your neighbourhood, served with a smile.
+              Your trusted beer and wine shop in Vashi offering chilled beers, premium labels and quality wines. Conveniently located in Sector 19C with a wide selection and friendly service.
             </p>
 
             <div className="mt-14 sm:mt-16 md:mt-18 flex flex-wrap gap-4">
               <a
-                href="#categories"
+                href="/categories"
                 className="group relative overflow-hidden shimmer px-8 py-4 rounded-full bg-gradient-to-r from-[#c78f45] via-[#e2c78a] to-[#c78f45] text-[#120d0a] font-medium tracking-wide hover:shadow-[0_15px_45px_-10px_rgba(201,163,90,0.6)] transition-all"
               >
                 <span className="relative flex items-center gap-2">
@@ -64,7 +50,7 @@ export default function Hero() {
                 </span>
               </a>
               <a
-                href="#contact"
+                href="/contact"
                 className="group px-8 py-4 rounded-full border border-[#c78f45]/40 text-[#e8d3b6] hover:bg-[#c78f45]/10 hover:border-[#c78f45] transition-all backdrop-blur-sm"
               >
                 <span className="flex items-center gap-2">

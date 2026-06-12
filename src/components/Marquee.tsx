@@ -1,8 +1,7 @@
-const ITEMS = [
-  "Chilled Beer", "Normal Beer", "Flavoured Beer", "Wine",
-];
+import { FEATURED_PRODUCTS } from "../data";
 
 export default function Marquee() {
+  const ITEMS = FEATURED_PRODUCTS.map((product) => product.name);
   const doubled = [...ITEMS, ...ITEMS];
   return (
     <div className="relative border-y border-[#c78f45]/15 bg-[#1a140f] py-6 overflow-hidden">

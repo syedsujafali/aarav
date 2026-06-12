@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import logo from "../assets/logoo.png";
 import { NAV_LINKS, STORE } from "../data";
 
 export default function Navbar() {
+  const { pathname } = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -23,27 +24,25 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-        <Link to="/" className="flex items-center group ">
+        <a href="/" className="flex items-center group ">
           <img
             src={logo}
             alt="Aarav Beer & Wine Shop logo"
             className="h-25 w-64 sm:h-20 sm:w-50 object-contain rounded-none shadow-none p-0 bg-transparent opacity-90"
           />
-        </Link>
+        </a>
 
         <nav className="hidden xl:flex items-center gap-8">
           {NAV_LINKS.map((l) => (
-            <NavLink
+            <a
               key={l.href}
-              to={l.href}
-              className={({ isActive }) =>
-                `relative text-sm transition-colors after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-[#c78f45] after:transition-all hover:after:w-full ${
-                  isActive ? "text-[#e2c78a] after:w-full" : "text-[#e8d3b6]/80 hover:text-[#e2c78a]"
-                }`
-              }
+              href={l.href}
+              className={`relative text-sm transition-colors after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-[#c78f45] after:transition-all hover:after:w-full ${
+                pathname === l.href ? "text-[#e2c78a] after:w-full" : "text-[#e8d3b6]/80 hover:text-[#e2c78a]"
+              }`}
             >
               {l.label}
-            </NavLink>
+            </a>
           ))}
         </nav>
 
@@ -55,7 +54,7 @@ export default function Navbar() {
             {STORE.phone}
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="relative overflow-hidden shimmer px-5 py-2.5 rounded-full text-sm bg-gradient-to-r from-[#c78f45] to-[#8c6a2b] text-[#120d0a] font-medium hover:shadow-[0_8px_30px_-6px_rgba(201,163,90,0.55)] transition-shadow"
           >
             Visit Store
@@ -84,19 +83,19 @@ export default function Navbar() {
         <div className="px-5 pb-6 pt-4 bg-[#120d0a]/98 border-t border-[#c78f45]/15 shadow-2xl shadow-black/30">
           <nav className="flex flex-col gap-1">
             {NAV_LINKS.map((l) => (
-              <Link
+              <a
                 key={l.href}
-                to={l.href}
+                href={l.href}
                 onClick={() => setOpen(false)}
                 className="py-3 px-2 text-[#e8d3b6]/85 border-b border-white/5 hover:text-[#e2c78a]"
               >
                 {l.label}
-              </Link>
+              </a>
             ))}
           </nav>
           <div className="flex gap-3 mt-5">
             <a href={`tel:${STORE.phoneRaw}`} className="flex-1 text-center py-3 rounded-full border border-[#c78f45]/40 text-[#e2c78a]">Call</a>
-            <a href="#contact" onClick={() => setOpen(false)} className="flex-1 text-center py-3 rounded-full bg-gradient-to-r from-[#c78f45] to-[#8c6a2b] text-[#120d0a] font-medium">Visit</a>
+            <a href="/contact" onClick={() => setOpen(false)} className="flex-1 text-center py-3 rounded-full bg-gradient-to-r from-[#c78f45] to-[#8c6a2b] text-[#120d0a] font-medium">Visit</a>
           </div>
         </div>
       </div>

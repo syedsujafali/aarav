@@ -5,11 +5,11 @@ import about7 from '../assets/8.jpeg';
 
 export default function About() {
   const highlights = [
-    "Trusted neighbourhood store since years",
-    "Wide product selection — chilled beer, normal beer, flavoured beer and wine",
-    "Friendly, knowledgeable staff",
-    "Convenient Sector 19C, Vashi location",
-    "Fresh, well-stocked inventory updated daily",
+    "Trusted beer and wine shop in Vashi, Navi Mumbai",
+    "Wide selection of chilled beer, premium beer, strong beer and wines",
+    "Friendly and knowledgeable staff",
+    "Convenient location in Sector 19C, Vashi",
+    "Fresh inventory and popular brands stocked regularly",
   ];
 
   return (
@@ -71,18 +71,13 @@ export default function About() {
               <span className="text-[11px] tracking-[0.4em] uppercase text-[#c78f45]">About the Shop</span>
             </div>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-[#e8d3b6]">
-              A neighbourhood shop with a
-              <span className="italic text-gold-gradient"> personal touch.</span>
+              Aarav Beer & Wine Shop is a trusted beer and wine store in Vashi, Navi Mumbai.
             </h2>
             <p className="mt-6 text-[#e8d3b6]/70 leading-relaxed text-lg font-light">
-              Aarav Beer & Wine Shop has been a trusted name in Vashi, Navi Mumbai for years.
-              We're more than a liquor store — we're the friendly local stop where you find exactly
-              what you came for, every single time.
+              Conveniently located in Sector 19C, we offer chilled beer, premium beer, strong beer and a curated collection of quality wines for every occasion.
             </p>
             <p className="mt-4 text-[#e8d3b6]/60 leading-relaxed">
-              From the daily after-work beer to the bottle for a special celebration, our shelves
-              are stocked with India's most loved brands. Walk in, ask anything, and our team
-              will happily help you choose.
+              Whether you're picking up a refreshing beer after work or choosing a wine for a celebration, you'll find popular brands and fresh stock ready for you. Our knowledgeable team is always happy to help you discover the perfect choice.
             </p>
 
             <ul className="mt-8 space-y-3.5">
@@ -96,13 +91,13 @@ export default function About() {
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="#contact"
+                href="/contact"
                 className="px-7 py-3.5 rounded-full bg-gradient-to-r from-[#c78f45] to-[#8c6a2b] text-[#120d0a] font-medium hover:shadow-[0_15px_45px_-10px_rgba(201,163,90,0.6)] transition-shadow"
               >
                 Visit the Store
               </a>
               <a
-                href="#gallery"
+                href="/gallery"
                 className="px-7 py-3.5 rounded-full border border-[#c78f45]/40 text-[#e8d3b6] hover:bg-[#c78f45]/10 transition-all"
               >
                 See the Shop

@@ -42,7 +42,7 @@ export default function Categories() {
                           src={src}
                           alt={`${c.name} product ${imageIndex + 1}`}
                           loading="lazy"
-                          className="h-full w-full object-contain p-4"
+                          className="min-h-full min-w-full object-cover"
                         />
                         <button
                           type="button"
@@ -54,26 +54,19 @@ export default function Categories() {
                       </div>
                     ))}
                   </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#120d0a] via-[#120d0a]/40 to-transparent" />
-                
-                <div className="absolute bottom-4 left-5 right-5">
-                  <div className="text-[10px] tracking-[0.3em] uppercase text-[#c78f45] mb-1">{c.tagline}</div>
-                  <h3 className="font-serif text-3xl text-[#e8d3b6]">{c.name}</h3>
                 </div>
-              </div>
 
-              <div className="p-6">
-                <p className="text-sm text-[#e8d3b6]/65 leading-relaxed">{c.desc}</p>
-                <div className="mt-5 flex items-center justify-between pt-5 border-t border-white/5">
-                  <span className="text-xs text-[#e8d3b6]/45">In Stock</span>
-                  <span className="flex items-center gap-2 text-xs text-[#e2c78a] group-hover:gap-3 transition-all">
-                    Explore
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
+                <div className="p-6 bg-[#120d0a]/90 border-t border-white/10">
+                  <span className="inline-flex rounded-full border border-[#c78f45]/25 bg-[#120d0a]/80 px-3 py-1 text-[11px] uppercase tracking-[0.35em] text-[#c78f45]">
+                    {c.tagline}
                   </span>
+                  <h3 className="mt-4 font-serif text-3xl text-[#e8d3b6] tracking-tight">{c.name}</h3>
+                  <p className="mt-4 text-sm text-[#e8d3b6]/65 leading-relaxed">{c.desc}</p>
+                  <div className="mt-6 flex items-center justify-between text-sm text-[#e2c78a]">
+                    <span className="font-medium">In Stock</span>
+                    <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  </div>
                 </div>
-              </div>
 
               {/* Hover gold glow */}
               <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[radial-gradient(circle_at_50%_0%,rgba(201,163,90,0.18),transparent_60%)]" />
